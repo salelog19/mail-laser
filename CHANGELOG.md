@@ -1,6 +1,18 @@
 # CHANGELOG (MailLaser)
 
 
+<a name="v3.0.5"></a>
+## [v3.0.5](https://github.com/Govcraft/mail-laser/compare/v3.0.4...v3.0.5)
+
+> 2026-06-07
+
+
+<a name="v3.0.4"></a>
+## [v3.0.4](https://github.com/Govcraft/mail-laser/compare/v3.0.3...v3.0.4)
+
+> 2026-06-07
+
+
 <a name="v3.0.3"></a>
 ## v3.0.3
 
