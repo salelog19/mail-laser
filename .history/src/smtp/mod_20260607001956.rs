@@ -359,17 +359,9 @@ where
         SmtpCommandResult::RcptTo(email) => {
             let received_email_lower = email.to_lowercase();
             let is_known = ctx
-    .target_emails
-    .iter()
-    .any(|t| {
-        let t = t.to_lowercase();
-
-        if let Some(domain) = t.strip_prefix("*@") {
-            received_email_lower.ends_with(&format!("@{}", domain))
-        } else {
-            t == received_email_lower
-        }
-    });
+                .target_emails
+                .iter()
+                .any(|t| t.to_lowercase() == received_email_lower);
             if is_known {
                 session.accepted_recipient = email;
                 protocol.write_line("250 OK").await?;
