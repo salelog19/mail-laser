@@ -1,294 +1,55 @@
 # CHANGELOG (MailLaser)
 
 
-<a name="v3.0.2"></a>
-## [v3.0.2](https://github.com/Govcraft/mail-laser/compare/v3.0.1...v3.0.2)
+<a name="v3.0.3"></a>
+## v3.0.3
 
-> 2026-05-07
-
-### Features
-
-* **webhook:** allow plain HTTP for loopback webhook URLs
-
-
-<a name="v3.0.1"></a>
-## [v3.0.1](https://github.com/Govcraft/mail-laser/compare/v3.0.0...v3.0.1)
-
-> 2026-05-01
-
-
-<a name="v3.0.0"></a>
-## [v3.0.0](https://github.com/Govcraft/mail-laser/compare/v2.0.0...v3.0.0)
-
-> 2026-04-24
-
-### Bug Fixes
-
-* **docker:** actually rebuild main crate after src copy
-* **docs:** route Markdoc links through next/link so basePath applies
-
-### Features
-
-* **auth:** add attachment pass-through with Cedar-based authorization
-* **dmarc:** add SPF+DKIM+DMARC validation for inbound SMTP
-* **smtp:** bound unknown-RCPT per session and close v3 test gaps
-* **webhook:** add HMAC-SHA256 request signing for outbound webhooks
-
-
-<a name="v2.0.0"></a>
-## [v2.0.0](https://github.com/Govcraft/mail-laser/compare/v1.2.0...v2.0.0)
-
-> 2026-02-13
-
-### Bug Fixes
-
-* **deps:** remove stale package-lock.json and update npm dependencies
-
-### Code Refactoring
-
-* migrate to acton-reactive actor model with resilience and comprehensive tests
-
-
-<a name="v1.2.0"></a>
-## [v1.2.0](https://github.com/Govcraft/mail-laser/compare/v1.1.1...v1.2.0)
-
-> 2026-02-06
-
-### Bug Fixes
-
-* **deps:** resolve Dependabot security vulnerabilities
-
-### Features
-
-* add optional header prefix passthrough to webhook payload
-
-
-<a name="v1.1.1"></a>
-## [v1.1.1](https://github.com/Govcraft/mail-laser/compare/v1.1.0...v1.1.1)
-
-> 2025-04-08
-
-### Bug Fixes
-
-* **smtp:** correctly handle non-TLS sessions and sender address parsing
-
-
-<a name="v1.1.0"></a>
-## [v1.1.0](https://github.com/Govcraft/mail-laser/compare/v1.0.0...v1.1.0)
-
-> 2025-04-08
-
-### Features
-
-* **smtp:** extract sender name from Reply-To header
-
-
-<a name="v1.0.0"></a>
-## [v1.0.0](https://github.com/Govcraft/mail-laser/compare/v0.5.2...v1.0.0)
-
-> 2025-04-06
-
-
-<a name="v0.5.2"></a>
-## [v0.5.2](https://github.com/Govcraft/mail-laser/compare/v0.5.1...v0.5.2)
-
-> 2025-04-06
-
-### Features
-
-* **parser:** handle multipart emails and generate text body using mailparse
-
-
-<a name="v0.5.1"></a>
-## [v0.5.1](https://github.com/Govcraft/mail-laser/compare/v0.5.0...v0.5.1)
-
-> 2025-04-06
-
-### Features
-
-* **parser:** handle multipart emails and generate text body using mailparse
-
-
-<a name="v0.5.0"></a>
-## [v0.5.0](https://github.com/Govcraft/mail-laser/compare/v0.4.0...v0.5.0)
-
-> 2025-04-06
-
-### Features
-
-* **parser:** use Content-Type for HTML detection and include HTML body
-* **parser:** include HTML body in webhook payload and strip for text body
-
-
-<a name="v0.4.0"></a>
-## [v0.4.0](https://github.com/Govcraft/mail-laser/compare/v0.3.0...v0.4.0)
-
-> 2025-04-06
+> 2026-06-07
 
 ### Bug Fixes
 
 * **build:** correctly include config tests from separate file
-
-
-<a name="v0.3.0"></a>
-## [v0.3.0](https://github.com/Govcraft/mail-laser/compare/v0.2.12...v0.3.0)
-
-> 2025-04-06
-
-### Features
-
-* **smtp:** add STARTTLS support using rustls
-
-
-<a name="v0.2.12"></a>
-## [v0.2.12](https://github.com/Govcraft/mail-laser/compare/v0.2.11...v0.2.12)
-
-> 2025-04-05
-
-### Code Refactoring
-
-* **ci:** simplify release notes handling
-
-
-<a name="v0.2.11"></a>
-## [v0.2.11](https://github.com/Govcraft/mail-laser/compare/v0.2.10...v0.2.11)
-
-> 2025-04-05
-
-### Bug Fixes
-
-* **ci:** handle empty release notes and pass body via output
-
-
-<a name="v0.2.10"></a>
-## [v0.2.10](https://github.com/Govcraft/mail-laser/compare/v0.2.9...v0.2.10)
-
-> 2025-04-05
-
-### Bug Fixes
-
-* **ci:** handle empty release notes and pass body via output
-
-
-<a name="v0.2.9"></a>
-## [v0.2.9](https://github.com/Govcraft/mail-laser/compare/v0.2.8...v0.2.9)
-
-> 2025-04-05
-
-### Bug Fixes
-
-* **ci:** ensure release-notes.md exists before generation
-
-
-<a name="v0.2.8"></a>
-## [v0.2.8](https://github.com/Govcraft/mail-laser/compare/v0.2.7...v0.2.8)
-
-> 2025-04-05
-
-### Bug Fixes
-
-* **ci:** separate full changelog from release notes
-
-
-<a name="v0.2.7"></a>
-## [v0.2.7](https://github.com/Govcraft/mail-laser/compare/v0.2.6...v0.2.7)
-
-> 2025-04-05
-
-
-<a name="v0.2.6"></a>
-## [v0.2.6](https://github.com/Govcraft/mail-laser/compare/v0.2.5...v0.2.6)
-
-> 2025-04-05
-
-### Bug Fixes
-
-* **ci:** use correct git-chglog argument for existing tags
-
-
-<a name="v0.2.5"></a>
-## [v0.2.5](https://github.com/Govcraft/mail-laser/compare/v0.2.4...v0.2.5)
-
-> 2025-04-05
-
-### Bug Fixes
-
-* **test:** prevent parallel execution interference in config tests
-
-### Code Refactoring
-
-* **health:** Migrate health check server from Axum to Hyper
-
-### Features
-
-* **config:** add info logging for loaded configuration values
-
-
-<a name="v0.2.4"></a>
-## [v0.2.4](https://github.com/Govcraft/mail-laser/compare/v0.2.3...v0.2.4)
-
-> 2025-04-05
-
-
-<a name="v0.2.3"></a>
-## [v0.2.3](https://github.com/Govcraft/mail-laser/compare/v0.2.2...v0.2.3)
-
-> 2025-04-05
-
-### Bug Fixes
-
-* **docker:** ensure application runs correctly in Docker container
-
-
-<a name="v0.2.2"></a>
-## [v0.2.2](https://github.com/Govcraft/mail-laser/compare/v0.2.1...v0.2.2)
-
-> 2025-04-05
-
-### Features
-
-* **error-handling:** improve panic logging and enable unwinding
-
-
-<a name="v0.2.1"></a>
-## [v0.2.1](https://github.com/Govcraft/mail-laser/compare/v0.2.0...v0.2.1)
-
-> 2025-04-05
-
-### Code Refactoring
-
-* improve config loading robustness and cleanup Dockerfile
-
-
-<a name="v0.2.0"></a>
-## [v0.2.0](https://github.com/Govcraft/mail-laser/compare/v0.1.0...v0.2.0)
-
-> 2025-04-05
-
-### Features
-
-* **health:** add basic HTTP health check endpoint
-
-
-<a name="v0.1.0"></a>
-## v0.1.0
-
-> 2025-04-04
-
-### Bug Fixes
-
 * **build:** correct Dockerfile syntax and certificate placement
+* **ci:** separate full changelog from release notes
+* **ci:** use correct git-chglog argument for existing tags
+* **ci:** ensure release-notes.md exists before generation
+* **ci:** handle empty release notes and pass body via output
 * **config:** change default SMTP port to 2525 to avoid permission errors
+* **deps:** remove stale package-lock.json and update npm dependencies
+* **deps:** resolve Dependabot security vulnerabilities
+* **docker:** ensure application runs correctly in Docker container
+* **docker:** actually rebuild main crate after src copy
+* **docs:** route Markdoc links through next/link so basePath applies
+* **smtp:** correctly handle non-TLS sessions and sender address parsing
 * **smtp:** correct DATA phase handling and loop termination
+* **test:** prevent parallel execution interference in config tests
 * **webhook:** update hyper client to 1.x API
 
 ### Code Refactoring
 
+* migrate to acton-reactive actor model with resilience and comprehensive tests
+* improve config loading robustness and cleanup Dockerfile
 * rename project to mail_laser
+* **ci:** simplify release notes handling
+* **health:** Migrate health check server from Axum to Hyper
 
 ### Features
 
+* add optional header prefix passthrough to webhook payload
+* **auth:** add attachment pass-through with Cedar-based authorization
 * **build:** add static musl Docker build using rustls
 * **ci:** add workflow to build and publish Docker image to GHCR on tag
+* **config:** add info logging for loaded configuration values
+* **dmarc:** add SPF+DKIM+DMARC validation for inbound SMTP
+* **error-handling:** improve panic logging and enable unwinding
+* **health:** add basic HTTP health check endpoint
+* **parser:** handle multipart emails and generate text body using mailparse
+* **parser:** use Content-Type for HTML detection and include HTML body
+* **parser:** include HTML body in webhook payload and strip for text body
+* **smtp:** add STARTTLS support using rustls
+* **smtp:** extract sender name from Reply-To header
+* **smtp:** bound unknown-RCPT per session and close v3 test gaps
+* **webhook:** allow plain HTTP for loopback webhook URLs
+* **webhook:** add HMAC-SHA256 request signing for outbound webhooks
 * **webhook:** use dynamic user-agent from Cargo manifest
 
