@@ -228,7 +228,7 @@ where
             // Trim trailing CRLF or LF before returning.
             // Use array pattern suggested by clippy for conciseness
             let line = buffer.trim_end_matches(['\r', '\n']).to_string();
-            debug!("SMTP Read: {}", line);
+            println!("SMTP_READ: {}", line);
             Ok(line)
         }
     }
