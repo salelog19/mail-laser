@@ -257,9 +257,9 @@ where
         addr_part.and_then(|addr_spec| {
             // Remove outer angle brackets if present, as addrparse expects the raw address spec.
             let spec_to_parse = addr_spec
-                .strip_prefix('<')
-                .and_then(|s| s.strip_suffix('>'))
-                .unwrap_or(addr_spec);
+    .strip_prefix('<')
+    .map(|s| s.split('>').next().unwrap_or(s).trim())
+    .unwrap_or(addr_spec);
 
             match addrparse(spec_to_parse) {
                 Ok(addrs) => {
